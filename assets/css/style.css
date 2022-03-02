@@ -109,6 +109,10 @@ h1, h2, h3, h4, h5, h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+
+  .emailll{
+    display: none;
+  }
 }
 /*--------------------------------------------------------------
 # Top Bar
@@ -120,6 +124,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   color: #fff;
   padding: 0;
+ 
 }
 #topbar .contact-info i {
   font-style: normal;
@@ -599,6 +604,7 @@ section {
   .breadcrumbs ol li {
     display: inline-block;
   }
+ 
 }
 
 /*--------------------------------------------------------------
@@ -1568,5 +1574,22 @@ section {
     float: none;
     text-align: center;
     padding: 2px 0;
+  }
+
+  .emailll{
+    display: none !important;
+  }
+}
+
+.mobile-btn {
+  position: fixed;
+  bottom: 15px;
+  z-index: 999;
+  left: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .mobile-btn {
+   display: none;
   }
 }
